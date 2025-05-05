@@ -218,3 +218,22 @@
   align-items: center;
   gap: 8px;
 }
+
+.video {
+  display: grid;
+  place-items: center; /* центрує по вертикалі та горизонталі */
+  position: relative;
+}
+
+.video-picture {
+  width: 100%;
+  height: auto;
+  display: block;
+  grid-area: 1 / 1; /* поміщає картинку у перший шар */
+}
+
+.video-buton {
+  grid-area: 1 / 1; /* накладає поверх картинки */
+  z-index: 1;
+  cursor: pointer;
+}
